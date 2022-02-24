@@ -1,0 +1,34 @@
+.map-cluster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  border-radius: 5%;
+  height: 70vw;
+  width: 70vw;
+  margin-top: 30px;
+}
+
+.map-cluster-latitude,
+.map-cluster-longitude {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #map {
+    height: 30vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .map-cluster-latitude,
+  .map-cluster-longitude {
+    font-size: 5vw;
+}
+}

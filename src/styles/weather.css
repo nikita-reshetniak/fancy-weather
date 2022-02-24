@@ -1,0 +1,108 @@
+@media screen and (min-width: 1000px) {
+  .weather-cluster {
+    flex-shrink: 0;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .weather-cluster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 25% 25% auto;
+  }
+
+  .weather-cluster > .user-location {
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .weather-cluster > .user-time {
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 2.5vw;
+  }
+
+  .weather-cluster > .current-temp {
+    font-size: 20vw;
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .weather-cluster > .current-params {
+    font-size: 2vw;
+    grid-row: 3 / 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .weather-cluster>.current-params > div {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .weather-cluster>.forecast {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .weather-cluster>.forecast>.forecast-day>.week-day {
+    font-size: 1.5vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .weather-cluster>.forecast>.forecast-day>.temp {
+    font-size: 8vw;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 699px) {
+  .weather-cluster{
+    text-align: center;
+  }
+  
+  .weather-cluster > .user-location {
+    font-size: 8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .weather-cluster > .user-time {
+    font-size: 6vw;
+  }
+
+  .weather-cluster > .current-temp {
+    font-size: 70vw;
+  }
+
+  .weather-cluster > .current-params {
+    font-size: 6vw;
+  }
+
+  .weather-cluster > .current-params > div {
+    margin-bottom: 7px;
+    text-transform: uppercase;
+  }
+
+  .weather-cluster > .forecast > .forecast-day {
+    margin-top: 30px;
+  }
+  
+  .weather-cluster>.forecast>.forecast-day>.week-day {
+    font-size: 6vw;
+  }
+  
+  .weather-cluster>.forecast>.forecast-day>.temp {
+    font-size: 5rem;
+    text-align: center;
+  }
+}

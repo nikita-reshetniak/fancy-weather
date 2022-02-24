@@ -1,0 +1,19 @@
+body {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    flex-wrap: nowrap;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
